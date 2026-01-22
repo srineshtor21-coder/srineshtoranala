@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Articles - Srinesh Toranala</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a4d3c 0%, #1a1a2e 50%, #16213e 100%);
+            color: #fff;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            background: linear-gradient(45deg, #4ecca3, #6effc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(45deg, #4ecca3, #45b393);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: all 0.3s;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(78, 204, 163, 0.4);
+        }
+
+        .article-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+        }
+
+        .article-card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(78, 204, 163, 0.2);
+            transition: all 0.3s;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+            border-color: #4ecca3;
+            box-shadow: 0 10px 30px rgba(78, 204, 163, 0.2);
+        }
+
+        .article-card h2 {
+            color: #4ecca3;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .article-card .author {
+            color: #6effc4;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .article-card .subject {
+            color: #a8e6cf;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-card p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .read-btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: rgba(78, 204, 163, 0.2);
+            color: #4ecca3;
+            text-decoration: none;
+            border-radius: 50px;
+            border: 2px solid #4ecca3;
+            font-weight: 600;
+            transition: all 0.3s;
+            margin-right: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .read-btn:hover {
+            background: #4ecca3;
+            color: #0a4d3c;
+        }
+
+        .embedded-doc {
+            margin-top: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            border-radius: 15px;
+            border: 1px solid rgba(78, 204, 163, 0.2);
+        }
+
+        .embedded-doc iframe {
+            width: 100%;
+            min-height: 800px;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html#research" class="back-btn">← Back to Home</a>
+        
+        <h1>Research Articles</h1>
+
+        <div class="article-grid">
+            <!-- Article 1: Deep Learning Flood Predictions -->
+            <div class="article-card">
+                <h2>Deep Learning Rapid Flood Risk Predictions for Climate Resilience Planning</h2>
+                <p class="author">By Yosri, Ahmed, et al.</p>
+                <p class="subject">Subject: AI in Environmental Protection</p>
+                <p>This article explores the utilization of deep learning to make predictions on when and how much damage a flood may cause. The study explains the usage of "rapid and accurate flood risk prediction" (RAPFLO), which uses a "hierarchical deep neural network (HDNN)." This tool would be able to predict floods at a much cheaper rate and utilize less energy than a regular Machine learning program.</p>
+                <a href="https://web.kamihq.com/web/viewer.html?state=%7B%22ids%22%3A%5B%2212kzkXGxFJdAXOgRUd1cEWGHWST5jyC05%22%5D%2C%22action%22%3A%22open%22%2C%22userId%22%3A%22108639177494236451614%22%7D" class="read-btn" target="_blank">Read Annotated Article</a>
+                <a href="https://drive.google.com/file/d/1z4u_fcskVD8_1bJJRqChspCSWauxtEUK/view" class="read-btn" target="_blank">View on Google Drive</a>
+            </div>
+
+            <!-- Article 2: Air Pollution Prediction -->
+            <div class="article-card">
+                <h2>Air Pollution Prediction with Machine Learning: A Case Study of Indian Cities</h2>
+                <p class="author">By Kumar, K., and B. P. Pande</p>
+                <p class="subject">Subject: Machine Learning in Environmental Monitoring</p>
+                <p>This research explores the utilization of a machine learning program for predicting air quality in Indian cities. The paper reviews multiple books on the topic and runs their own study to explain how important it is to know how polluted the air has become. Air quality models are beneficial for allowing a city to create more green spaces and initiate programs to clean cities.</p>
+                <a href="https://web.kamihq.com/web/viewer.html?state=%7B%22ids%22%3A%5B%2210drcWlkmCQPcUzPED8IECFzTY-8vBWmX%22%5D%2C%22action%22%3A%22open%22%2C%22userId%22%3A%22108639177494236451614%22%7D" class="read-btn" target="_blank">Read Annotated Article</a>
+            </div>
+
+            <!-- Article 3: Green AI -->
+            <div class="article-card">
+                <h2>A Review of Green Artificial Intelligence: Towards a More Sustainable Future</h2>
+                <p class="author">By Bolón-Canedo, V., et al.</p>
+                <p class="subject">Subject: Sustainable AI Development</p>
+                <p>This article explores how artificial intelligence can be designed in a way that reduces energy consumption and supports sustainability. The authors propose "green AI" approaches that optimize algorithms and reduce the data needed for training without compromising performance. They note that some AI models require enough energy to "power around 121 homes for a year."</p>
+            </div>
+
+            <!-- Article 4: AI Gambit Climate Change -->
+            <div class="article-card">
+                <h2>The AI Gambit: Leveraging Artificial Intelligence to Combat Climate Change</h2>
+                <p class="author">By Cowls, J., et al.</p>
+                <p class="subject">Subject: AI Applications in Climate Solutions</p>
+                <p>This article provides a detailed look at how AI could help address climate change, while also stressing the ethical and practical challenges. The authors explain that AI can assist in "classification, prediction, and decision-making," making it a potentially powerful tool for identifying solutions to environmental problems.</p>
+            </div>
+
+            <!-- Article 5: AI and Privacy -->
+            <div class="article-card">
+                <h2>Artificial Intelligence and Privacy</h2>
+                <p class="author">By Jurewicz, M., et al.</p>
+                <p class="subject">Subject: Ethical AI Development</p>
+                <p>This journal gives an informational analysis of the ethical issues seen with using AI. It references how algorithms can accomplish tasks at high speeds, but AI is doing more than it is asked to—it can scan information and figure out private information about users, resulting in a need for caution in what we allow AI to do.</p>
+            </div>
+
+            <!-- Article 6: Machine Learning in Medicine -->
+            <div class="article-card">
+                <h2>What Is Machine Learning, Artificial Neural Networks, and Deep Learning? Examples in Medicine</h2>
+                <p class="author">By Kufel, J., et al.</p>
+                <p class="subject">Subject: AI Applications in Healthcare</p>
+                <p>This article reveals key information on how AI can be broken down into Machine Learning, Artificial Neural Networks (ANN), and Deep Learning. It explains how machine learning is trained on data and utilizes an ANN to differentiate between different characteristics in the data, with applications in the medical field.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
