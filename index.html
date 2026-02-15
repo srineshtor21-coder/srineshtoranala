@@ -38,17 +38,54 @@
             flex-wrap: wrap;
         }
 
+        nav li {
+            position: relative;
+        }
+
         nav a {
             color: #4ecca3;
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s;
             font-size: 0.9rem;
+            display: block;
+            padding: 0.5rem 0;
         }
 
         nav a:hover {
             color: #6effc4;
             transform: translateY(-2px);
+        }
+
+        /* Dropdown */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: rgba(10, 77, 60, 0.98);
+            min-width: 200px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            border-radius: 5px;
+            padding: 0.5rem 0;
+            margin-top: 0.5rem;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            padding: 0.8rem 1.5rem;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background: rgba(78, 204, 163, 0.2);
         }
 
         /* Section Divider */
@@ -106,7 +143,7 @@
 
         /* Home Section with Background Image */
         #home {
-            background-image: url('home-bg.jpg'); /* Replace with your circuit board image */
+            background-image: url('home-bg.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -337,6 +374,41 @@
             box-shadow: 0 15px 40px rgba(78, 204, 163, 0.3);
         }
 
+        /* Mentor Section */
+        .mentor-content {
+            max-width: 1000px;
+            text-align: center;
+        }
+
+        .mentor-profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .mentor-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 20px;
+            object-fit: cover;
+            border: 4px solid #4ecca3;
+            box-shadow: 0 10px 40px rgba(78, 204, 163, 0.3);
+        }
+
+        .mentor-bio {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .mentor-bio h4 {
+            color: #4ecca3;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
         /* Contact Section */
         .contact-form {
             max-width: 600px;
@@ -389,6 +461,7 @@
             nav ul { gap: 1rem; }
             section { padding: 5rem 1rem 1rem; }
             .profile-image { width: 250px; height: 250px; }
+            .mentor-image { width: 200px; height: 200px; }
         }
     </style>
 </head>
@@ -401,7 +474,13 @@
             <li><a href="#resume">Résumé</a></li>
             <li><a href="#ism">About ISM</a></li>
             <li><a href="#blogs">Blogs</a></li>
-            <li><a href="#research">Research</a></li>
+            <li class="dropdown">
+                <a href="#research">Research ▾</a>
+                <div class="dropdown-content">
+                    <a href="research-articles.html">Research Articles</a>
+                    <a href="research-interviews.html">Research Interviews</a>
+                </div>
+            </li>
             <li><a href="#mentor">Mentor</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -469,7 +548,7 @@
             <p>Gifted and high achieving students focus their study on a topic or career of their choice. They develop a research portfolio that has a collection of resources including interviews and observations with people who work in their chosen field or topic of study.</p>
             <p>Students work on time management, communication, research, goal setting, various soft skills, and presentation skills with mentors at their mentorship, students gain "real world" experience and also to create an advanced product related to their topic.</p>
             <p>Students progressively give longer speech presentations and will give a formal presentation of their product and mentorship in May. Students leave the ISM experience knowing more about their chosen profession and whether or not that profession is the life and career path they desire to choose as they prepare to enter college.</p>
-            <p>on about the program, visit the <a href="https://www.friscoisd.org/departments/independent-study-mentorship/home" class="link">Frisco ISD ISM website. </a></p>
+            <p>For more information about the program, visit the <a href="https://www.friscoisd.org/departments/independent-study-mentorship/home" style="color: #4ecca3;">Frisco ISD ISM website.</a></p>
         </div>
     </section>
 
@@ -480,15 +559,27 @@
         <h2>ISM Blogs</h2>
         <div class="blog-grid">
             <div class="blog-card">
+                <h3>Continuing the Journey Towards my Final Product</h3>
+                <p><em>February 2nd, 2026</em></p>
+                <p>Last week, I used the snow days to continue to work on my Original Work tweaking it to work a lot more efficiently and be more accessible for users. I added a lot more features and turned it into a Github page...</p>
+                <a href="blogs.html" class="btn">Read More</a>
+            </div>
+            <div class="blog-card">
+                <h3>Interview with my Mentor</h3>
+                <p><em>January 26th, 2026</em></p>
+                <p>Last week in ISM, we had our gallery walks over our display boards. I spent a lot of the weekend before perfecting and making sure my board was professional. I also had a second interview with Ms. Adamska...</p>
+                <a href="blogs.html" class="btn">Read More</a>
+            </div>
+            <div class="blog-card">
                 <h3>Creating my projects & Finding a mentor</h3>
                 <p><em>January 12th, 2026</em></p>
-                <p>Over winter break, I continued to perfect my original work website by getting it to work on Render and improving the UI. I'm really excited to present my display board because I want to talk about how I trained my small AI model to reduce tokens of prompts for large AI models...</p>
+                <p>Over winter break, I continued to perfect my original work website by getting it to work on Render and improving the UI. I'm really excited to present my display board because I want to talk about how I trained my small AI model...</p>
                 <a href="blogs.html" class="btn">Read More</a>
             </div>
             <div class="blog-card">
                 <h3>Gaining Insights in the Field</h3>
                 <p><em>December 5th, 2025</em></p>
-                <p>I had an interview with Mr. Huang, a Data scientist for environmentally sustainable AI at Google. I learned about how Google is trying to lessen energy consumption through various new techniques. My idea about token count affecting energy consumption is very accurate...</p>
+                <p>I had an interview with Mr. Huang, a Data scientist for environmentally sustainable AI at Google. I learned about how Google is trying to lessen energy consumption through various new techniques...</p>
                 <a href="blogs.html" class="btn">Read More</a>
             </div>
         </div>
@@ -522,18 +613,20 @@
 
     <!-- Mentor Section -->
     <section id="mentor">
-        <h2>Mentor</h2>
-        <div class="ism-content" style="text-align: center;">
-            <div style="width: 150px; height: 150px; margin: 0 auto 2rem; background: rgba(78, 204, 163, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 3px solid #4ecca3;">
-                <svg width="80" height="80" fill="#4ecca3" viewBox="0 0 24 24">
-                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                </svg>
+        <h2>My Mentor</h2>
+        <div class="mentor-content">
+            <div class="mentor-profile">
+                <img src="mentor-marta.jpg" alt="Marta Adamska" class="mentor-image">
+                <div>
+                    <h3>Marta Adamska</h3>
+                    <p style="color: #6effc4; margin-bottom: 2rem; font-size: 1.2rem;">Sustainable AI Researcher at Lancaster University</p>
+                </div>
             </div>
-            <h3>Mentor's Name</h3>
-            <p style="color: #6effc4; margin-bottom: 2rem;">Mentor</p>
-            <div style="background: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 10px;">
-                <h4 style="color: #4ecca3; margin-bottom: 1rem;">Mentor's Bio</h4>
-                <p>(Currently in search of one)</p>
+            <div class="mentor-bio">
+                <h4>About My Mentor</h4>
+                <p>Marta Adamska is a Sustainable AI Researcher at Lancaster University in the United Kingdom. She specializes in the intersection of machine learning and sustainability, with a particular focus on Transformer architectures and generative models. Her research examines the energy consumption of Large Language Models (LLMs) and contributes to national-level reporting of ICT carbon footprint in the UK.</p>
+                <p style="margin-top: 1rem;">Ms. Adamska has a strong technical background in Python, SQL, and data analysis, and she has held research and test engineering roles that reflect her expertise in both academic and applied technology settings. She earned her Bachelor's degree in Computer Science from Lancaster University and continues her academic and research journey there as a postgraduate researcher.</p>
+                <p style="margin-top: 1rem;">Her work directly aligns with my interest in artificial intelligence and sustainable technology, making her mentorship especially valuable as I explore the environmental impacts of AI systems and responsible innovation in tech.</p>
             </div>
         </div>
     </section>
@@ -544,32 +637,8 @@
     <section id="projects">
         <h2>Projects</h2>
         <div class="research-tabs">
-            <a href="#" class="tab-btn">Original Work</a>
-            <a href="#" class="tab-btn">Final Product</a>
-        </div>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Energy Saver AI - Prompt Optimizer</h3>
-                <p><strong>Original Work Project</strong></p>
-                <p>An AI-driven application that analyzes and optimizes user prompts to reduce computational load and energy consumption. Built with T5 transformer model, measures energy savings using Zeus library, and includes web interface for accessibility.</p>
-                <p><em>Tools: Python, PyTorch, Transformers, Flask, DistilBERT</em></p>
-                <a href="https://github.com/srineshtor21-coder/Green-Prompts-Optimizer" class="btn" target="_blank">View on GitHub</a>
-                <a href="https://srineshtor21-coder.github.io/Green-Prompts-Optimizer/" class="btn" target="_blank">Try Demo</a>
-            </div>
-            <div class="project-card">
-                <h3>Green AI Research</h3>
-                <p><strong>ISM Research Project</strong></p>
-                <p>Comprehensive research on reducing AI energy consumption through prompt engineering and model optimization. Explored methods to quantify energy usage and implement sustainable AI practices.</p>
-                <p><em>Focus: Sustainable Computing, Environmental Impact</em></p>
-                <a href="research-articles.html" class="btn">View Research</a>
-            </div>
-            <div class="project-card">
-                <h3>AI in Environmental Protection</h3>
-                <p><strong>Research Studies</strong></p>
-                <p>Studied deep learning applications for flood prediction (RAPFLO) and machine learning for air quality monitoring in developing countries, exploring AI's role in climate resilience.</p>
-                <p><em>Topics: Climate Change, Predictive Modeling</em></p>
-                <a href="research-articles.html" class="btn">Read More</a>
-            </div>
+            <a href="original-work.html" class="tab-btn">Original Work</a>
+            <a href="final-product.html" class="tab-btn">Final Product</a>
         </div>
     </section>
 
