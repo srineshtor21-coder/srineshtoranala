@@ -5,456 +5,199 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Srinesh Toranala - Portfolio</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #0a4d3c 0%, #1a1a2e 50%, #16213e 100%);
             color: #fff;
             overflow-x: hidden;
         }
-
-        /* Navigation */
         nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
+            position: fixed; top: 0; width: 100%;
             background: rgba(10, 77, 60, 0.95);
             backdrop-filter: blur(10px);
-            padding: 1rem 2rem;
-            z-index: 1000;
+            padding: 1rem 2rem; z-index: 1000;
             box-shadow: 0 2px 10px rgba(0,0,0,0.3);
         }
-
         nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
+            list-style: none; display: flex;
+            justify-content: center; gap: 2rem; flex-wrap: wrap;
         }
-
-        nav li {
-            position: relative;
-        }
-
+        nav li { position: relative; }
         nav a {
-            color: #4ecca3;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s;
-            font-size: 0.9rem;
-            display: block;
-            padding: 0.5rem 0;
+            color: #4ecca3; text-decoration: none;
+            font-weight: 600; transition: all 0.3s;
+            font-size: 0.9rem; display: block; padding: 0.5rem 0;
         }
-
-        nav a:hover {
-            color: #6effc4;
-            transform: translateY(-2px);
-        }
-
-        /* Dropdown */
-        .dropdown {
-            position: relative;
-        }
-
+        nav a:hover { color: #6effc4; transform: translateY(-2px); }
+        .dropdown { position: relative; }
         .dropdown-content {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
+            display: none; position: absolute; top: 100%; left: 0;
             background: rgba(10, 77, 60, 0.98);
             min-width: 200px;
             box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-            border-radius: 5px;
-            padding: 0.5rem 0;
-            margin-top: 0.5rem;
+            border-radius: 5px; padding: 0.5rem 0; margin-top: 0.5rem;
         }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown-content a {
-            padding: 0.8rem 1.5rem;
-            display: block;
-        }
-
-        .dropdown-content a:hover {
-            background: rgba(78, 204, 163, 0.2);
-        }
-
-        /* Section Divider */
+        .dropdown:hover .dropdown-content { display: block; }
+        .dropdown-content a { padding: 0.8rem 1.5rem; display: block; }
+        .dropdown-content a:hover { background: rgba(78, 204, 163, 0.2); }
         .section-divider {
-            width: 100%;
-            height: 4px;
+            width: 100%; height: 4px;
             background: linear-gradient(90deg, transparent, #00d4ff, #0096ff, #00d4ff, transparent);
             box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
             animation: glow 2s ease-in-out infinite;
         }
-
-        @keyframes glow {
-            0%, 100% { opacity: 0.6; }
-            50% { opacity: 1; }
-        }
-
-        /* Sections */
+        @keyframes glow { 0%, 100% { opacity: 0.6; } 50% { opacity: 1; } }
         section {
-            min-height: 100vh;
-            padding: 6rem 2rem 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
+            min-height: 100vh; padding: 6rem 2rem 2rem;
+            display: flex; align-items: center;
+            justify-content: center; flex-direction: column;
             position: relative;
         }
-
         h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
+            font-size: 3.5rem; margin-bottom: 1rem;
             background: linear-gradient(45deg, #4ecca3, #6effc4);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: fadeInUp 1s;
         }
-
-        h2 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            color: #4ecca3;
-        }
-
-        h3 {
-            font-size: 1.8rem;
-            color: #6effc4;
-            margin-bottom: 1rem;
-        }
-
-        p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            max-width: 800px;
-            margin-bottom: 1rem;
-        }
-
-        /* Home Section with Background Image */
+        h2 { font-size: 2.5rem; margin-bottom: 2rem; color: #4ecca3; }
+        h3 { font-size: 1.8rem; color: #6effc4; margin-bottom: 1rem; }
+        p { font-size: 1.1rem; line-height: 1.8; max-width: 800px; margin-bottom: 1rem; }
         #home {
             background-image: url('home-bg.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            position: relative;
+            background-size: cover; background-position: center;
+            background-attachment: fixed; position: relative;
         }
-
         #home::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            content: ''; position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
             background: rgba(10, 77, 60, 0.7);
         }
-
-        .hero-content {
-            text-align: center;
-            animation: fadeIn 1.5s;
-            position: relative;
-            z-index: 1;
-        }
-
-        .subtitle {
-            font-size: 1.5rem;
-            color: #6effc4;
-            margin-bottom: 2rem;
-        }
-
+        .hero-content { text-align: center; animation: fadeIn 1.5s; position: relative; z-index: 1; }
+        .subtitle { font-size: 1.5rem; color: #6effc4; margin-bottom: 2rem; }
         .quote {
-            font-style: italic;
-            font-size: 1.3rem;
-            color: #a8e6cf;
-            margin-top: 2rem;
-            padding: 1rem;
-            border-left: 4px solid #4ecca3;
+            font-style: italic; font-size: 1.3rem;
+            color: #a8e6cf; margin-top: 2rem;
+            padding: 1rem; border-left: 4px solid #4ecca3;
         }
-
-        /* Buttons */
         .btn {
-            display: inline-block;
-            padding: 1rem 2rem;
-            margin: 0.5rem;
+            display: inline-block; padding: 1rem 2rem; margin: 0.5rem;
             background: linear-gradient(45deg, #4ecca3, #45b393);
-            color: #fff;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            transition: all 0.3s;
-            border: 2px solid transparent;
+            color: #fff; text-decoration: none;
+            border-radius: 50px; font-weight: 600;
+            transition: all 0.3s; border: 2px solid transparent;
         }
-
         .btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 25px rgba(78, 204, 163, 0.4);
             border-color: #6effc4;
         }
-
-        /* About Me Section */
         .about-content {
-            display: flex;
-            gap: 3rem;
-            align-items: center;
-            max-width: 1200px;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: flex; gap: 3rem; align-items: center;
+            max-width: 1200px; flex-wrap: wrap; justify-content: center;
         }
-
         .profile-image {
-            width: 300px;
-            height: 300px;
-            border-radius: 20px;
-            object-fit: cover;
-            border: 4px solid #4ecca3;
+            width: 300px; height: 300px; border-radius: 20px;
+            object-fit: cover; border: 4px solid #4ecca3;
             box-shadow: 0 10px 40px rgba(78, 204, 163, 0.3);
         }
-
-        .about-text {
-            flex: 1;
-            min-width: 300px;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1.5rem;
-        }
-
+        .about-text { flex: 1; min-width: 300px; }
+        .social-links { display: flex; gap: 1rem; margin-top: 1.5rem; }
         .social-btn {
-            width: 50px;
-            height: 50px;
+            width: 50px; height: 50px;
             background: rgba(78, 204, 163, 0.2);
-            border: 2px solid #4ecca3;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s;
-            color: #4ecca3;
-            text-decoration: none;
-            font-size: 1.5rem;
+            border: 2px solid #4ecca3; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            transition: all 0.3s; color: #4ecca3;
+            text-decoration: none; font-size: 1.5rem;
         }
-
         .social-btn:hover {
-            background: #4ecca3;
-            color: #0a4d3c;
+            background: #4ecca3; color: #0a4d3c;
             transform: translateY(-5px);
         }
-
+        .resume-display {
+            max-width: 800px; width: 100%;
+            background: #fff; border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            margin-bottom: 2rem;
+        }
+        .resume-display img { width: 100%; height: auto; display: block; }
+        .ism-content {
+            max-width: 1000px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 3rem; border-radius: 15px;
+            border: 1px solid rgba(78, 204, 163, 0.2);
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem; max-width: 1200px; width: 100%;
+        }
+        .blog-card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 2rem; border-radius: 15px;
+            border: 1px solid rgba(78, 204, 163, 0.2);
+            transition: all 0.3s; cursor: pointer;
+        }
+        .blog-card:hover {
+            transform: scale(1.05);
+            border-color: #4ecca3;
+        }
         .about-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-            max-width: 1200px;
+            gap: 2rem; margin-top: 2rem;
+            max-width: 1200px; width: 100%;
         }
-
         .about-card {
             background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            padding: 2rem;
+            backdrop-filter: blur(10px); padding: 2rem;
             border-radius: 15px;
             border: 1px solid rgba(78, 204, 163, 0.2);
             transition: all 0.3s;
         }
-
         .about-card:hover {
             transform: translateY(-5px);
             border-color: #4ecca3;
             box-shadow: 0 10px 30px rgba(78, 204, 163, 0.2);
         }
-
-        /* Resume Section */
-        .resume-display {
-            max-width: 800px;
-            width: 100%;
-            background: #fff;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-            margin-bottom: 2rem;
-        }
-
-        .resume-display img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        /* ISM Section */
-        .ism-content {
-            max-width: 1000px;
-            background: rgba(255, 255, 255, 0.05);
-            padding: 3rem;
-            border-radius: 15px;
-            border: 1px solid rgba(78, 204, 163, 0.2);
-        }
-
-        /* Blogs Section */
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            width: 100%;
-        }
-
-        .blog-card {
-            background: rgba(255, 255, 255, 0.08);
-            padding: 2rem;
-            border-radius: 15px;
-            border: 1px solid rgba(78, 204, 163, 0.2);
-            transition: all 0.3s;
-            cursor: pointer;
-        }
-
-        .blog-card:hover {
-            transform: scale(1.05);
-            border-color: #4ecca3;
-        }
-
-        /* Research Section */
-        .research-tabs {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .tab-btn {
-            padding: 1rem 2rem;
-            background: rgba(78, 204, 163, 0.1);
-            border: 2px solid #4ecca3;
-            color: #4ecca3;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s;
-            font-size: 1rem;
-            font-weight: 600;
-            text-decoration: none;
-        }
-
-        .tab-btn:hover {
-            background: #4ecca3;
-            color: #0a4d3c;
-        }
-
-        /* Projects Section */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            width: 100%;
-        }
-
-        .project-card {
-            background: linear-gradient(135deg, rgba(78, 204, 163, 0.1), rgba(110, 255, 196, 0.05));
-            padding: 2rem;
-            border-radius: 15px;
-            border: 1px solid rgba(78, 204, 163, 0.3);
-            transition: all 0.3s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(78, 204, 163, 0.3);
-        }
-
-        /* Mentor Section */
-        .mentor-content {
-            max-width: 1000px;
-            text-align: center;
-        }
-
+        .mentor-content { max-width: 1000px; text-align: center; }
         .mentor-profile {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 2rem;
+            display: flex; flex-direction: column;
+            align-items: center; gap: 2rem;
         }
-
         .mentor-image {
-            width: 250px;
-            height: 250px;
-            border-radius: 20px;
-            object-fit: cover;
+            width: 250px; height: 250px;
+            border-radius: 20px; object-fit: cover;
             border: 4px solid #4ecca3;
             box-shadow: 0 10px 40px rgba(78, 204, 163, 0.3);
         }
-
         .mentor-bio {
             background: rgba(255, 255, 255, 0.05);
-            padding: 2rem;
-            border-radius: 10px;
-            text-align: left;
+            padding: 2rem; border-radius: 10px; text-align: left;
         }
-
         .mentor-bio h4 {
-            color: #4ecca3;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
+            color: #4ecca3; margin-bottom: 1rem; font-size: 1.5rem;
         }
-
-        /* Contact Section */
-        .contact-form {
-            max-width: 600px;
-            width: 100%;
-        }
-
+        .contact-form { max-width: 600px; width: 100%; }
         input, textarea {
-            width: 100%;
-            padding: 1rem;
-            margin-bottom: 1rem;
+            width: 100%; padding: 1rem; margin-bottom: 1rem;
             background: rgba(255, 255, 255, 0.1);
             border: 1px solid rgba(78, 204, 163, 0.3);
-            border-radius: 10px;
-            color: #fff;
-            font-size: 1rem;
+            border-radius: 10px; color: #fff; font-size: 1rem;
         }
-
         input:focus, textarea:focus {
-            outline: none;
-            border-color: #4ecca3;
+            outline: none; border-color: #4ecca3;
             background: rgba(255, 255, 255, 0.15);
         }
-
-        textarea {
-            min-height: 150px;
-            resize: vertical;
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
+        textarea { min-height: 150px; resize: vertical; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-
-        /* Responsive */
         @media (max-width: 768px) {
             h1 { font-size: 2.5rem; }
             h2 { font-size: 2rem; }
@@ -466,7 +209,6 @@
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -478,16 +220,22 @@
                 <a href="#research">Research ▾</a>
                 <div class="dropdown-content">
                     <a href="research-articles.html">Research Articles</a>
+                    <a href="research-assessments.html">Research Assessments</a>
                     <a href="research-interviews.html">Research Interviews</a>
                 </div>
             </li>
             <li><a href="#mentor">Mentor</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li class="dropdown">
+                <a href="#projects">Projects ▾</a>
+                <div class="dropdown-content">
+                    <a href="original-work.html">Original Work</a>
+                    <a href="final-product.html">Final Product</a>
+                </div>
+            </li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Home Section -->
     <section id="home">
         <div class="hero-content">
             <h1>Srinesh Toranala</h1>
@@ -503,7 +251,6 @@
 
     <div class="section-divider"></div>
 
-    <!-- About Me Section -->
     <section id="about">
         <h2>About Srinesh Toranala</h2>
         <div class="about-content">
@@ -529,7 +276,6 @@
 
     <div class="section-divider"></div>
 
-    <!-- Resume Section -->
     <section id="resume">
         <h2>Résumé</h2>
         <div class="resume-display">
@@ -540,7 +286,6 @@
 
     <div class="section-divider"></div>
 
-    <!-- About ISM Section -->
     <section id="ism">
         <h2>About ISM</h2>
         <div class="ism-content">
@@ -554,32 +299,13 @@
 
     <div class="section-divider"></div>
 
-    <!-- Blogs Section -->
     <section id="blogs">
         <h2>ISM Blogs</h2>
         <div class="blog-grid">
             <div class="blog-card">
-                <h3>Continuing the Journey Towards my Final Product</h3>
-                <p><em>February 2nd, 2026</em></p>
-                <p>Last week, I used the snow days to continue to work on my Original Work tweaking it to work a lot more efficiently and be more accessible for users. I added a lot more features and turned it into a Github page...</p>
-                <a href="blogs.html" class="btn">Read More</a>
-            </div>
-            <div class="blog-card">
-                <h3>Interview with my Mentor</h3>
-                <p><em>January 26th, 2026</em></p>
-                <p>Last week in ISM, we had our gallery walks over our display boards. I spent a lot of the weekend before perfecting and making sure my board was professional. I also had a second interview with Ms. Adamska...</p>
-                <a href="blogs.html" class="btn">Read More</a>
-            </div>
-            <div class="blog-card">
-                <h3>Creating my projects & Finding a mentor</h3>
-                <p><em>January 12th, 2026</em></p>
-                <p>Over winter break, I continued to perfect my original work website by getting it to work on Render and improving the UI. I'm really excited to present my display board because I want to talk about how I trained my small AI model...</p>
-                <a href="blogs.html" class="btn">Read More</a>
-            </div>
-            <div class="blog-card">
-                <h3>Gaining Insights in the Field</h3>
-                <p><em>December 5th, 2025</em></p>
-                <p>I had an interview with Mr. Huang, a Data scientist for environmentally sustainable AI at Google. I learned about how Google is trying to lessen energy consumption through various new techniques...</p>
+                <h3>Starting the future today</h3>
+                <p><em>September 9th, 2025</em></p>
+                <p>I have learned so much about professional writing and researching in the past few weeks of ISM. I started this year knowing I wanted a career in AI, but I had no idea what that would look like until the career outlook assignment...</p>
                 <a href="blogs.html" class="btn">Read More</a>
             </div>
         </div>
@@ -588,22 +314,22 @@
 
     <div class="section-divider"></div>
 
-    <!-- Research Section -->
     <section id="research">
         <h2>Research</h2>
-        <div class="research-tabs">
-            <a href="research-articles.html" class="tab-btn">Research Articles</a>
-            <a href="research-interviews.html" class="tab-btn">Research Interviews</a>
-        </div>
         <div class="about-grid">
             <div class="about-card">
                 <h3>Research Articles</h3>
-                <p>Explore my collection of research articles on AI, robotics, and sustainable technology.</p>
+                <p>Explore my collection of research articles on AI and sustainable technology, including studies on green AI, climate change solutions, and energy-efficient computing.</p>
                 <a href="research-articles.html" class="btn">View Articles</a>
             </div>
             <div class="about-card">
+                <h3>Research Assessments</h3>
+                <p>Detailed analyses of academic papers on green AI, deep learning, and environmental applications. Organized by marking period with key findings and insights.</p>
+                <a href="research-assessments.html" class="btn">View Assessments</a>
+            </div>
+            <div class="about-card">
                 <h3>Research Interviews</h3>
-                <p>Insights from interviews with professionals in computer science, engineering, and AI fields.</p>
+                <p>Insights from interviews with professionals in computer science, engineering, and AI fields, including researchers from Google, Google DeepMind, and academia.</p>
                 <a href="research-interviews.html" class="btn">View Interviews</a>
             </div>
         </div>
@@ -611,7 +337,6 @@
 
     <div class="section-divider"></div>
 
-    <!-- Mentor Section -->
     <section id="mentor">
         <h2>My Mentor</h2>
         <div class="mentor-content">
@@ -633,18 +358,29 @@
 
     <div class="section-divider"></div>
 
-    <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        <div class="research-tabs">
-            <a href="original-work.html" class="tab-btn">Original Work</a>
-            <a href="final-product.html" class="tab-btn">Final Product</a>
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>Energy Saver AI - Prompt Optimizer</h3>
+                <p><strong>Original Work Project</strong></p>
+                <p>An AI-driven application that analyzes and optimizes user prompts to reduce computational load and energy consumption. Built with T5 transformer model, measures energy savings using Zeus library, and includes web interface for accessibility.</p>
+                <p style="margin-top: 1rem;"><em>Tools: Python, PyTorch, Transformers, Flask, DistilBERT</em></p>
+                <a href="original-work.html" class="btn" style="margin-top: 1rem;">Learn More</a>
+            </div>
+
+            <div class="about-card">
+                <h3>GreenInfer - Green AI Framework</h3>
+                <p><strong>Final Product Project</strong></p>
+                <p>A green orchestration framework designed to make AI more accessible and sustainable. Integrates prompt optimization and energy-aware model selection to reduce environmental footprint while maintaining accuracy.</p>
+                <p style="margin-top: 1rem;"><em>Status: Currently In Development</em></p>
+                <a href="final-product.html" class="btn" style="margin-top: 1rem;">Learn More</a>
+            </div>
         </div>
     </section>
 
     <div class="section-divider"></div>
 
-    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
         <p style="margin-bottom: 2rem; text-align: center;">The fastest way to contact me is by email: <a href="mailto:SrineshTor21@gmail.com" style="color: #4ecca3;">SrineshTor21@gmail.com</a></p>
@@ -659,7 +395,6 @@
     </section>
 
     <script>
-        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
