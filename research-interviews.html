@@ -5,12 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research Interviews - Srinesh Toranala</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #0a4d3c 0%, #1a1a2e 50%, #16213e 100%);
@@ -18,12 +13,7 @@
             padding: 2rem;
             min-height: 100vh;
         }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
+        .container { max-width: 1200px; margin: 0 auto; }
         h1 {
             font-size: 3rem;
             margin-bottom: 3rem;
@@ -32,7 +22,6 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
         .back-btn {
             display: inline-block;
             padding: 0.8rem 1.5rem;
@@ -44,18 +33,15 @@
             margin-bottom: 2rem;
             transition: all 0.3s;
         }
-
         .back-btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 25px rgba(78, 204, 163, 0.4);
         }
-
         .interview-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
         }
-
         .interview-card {
             background: rgba(255, 255, 255, 0.08);
             padding: 2rem;
@@ -63,47 +49,56 @@
             border: 1px solid rgba(78, 204, 163, 0.2);
             transition: all 0.3s;
         }
-
         .interview-card:hover {
             transform: translateY(-5px);
             border-color: #4ecca3;
             box-shadow: 0 10px 30px rgba(78, 204, 163, 0.2);
         }
-
         .interview-card h2 {
             color: #4ecca3;
             margin-bottom: 0.5rem;
         }
-
         .interview-card .title {
             color: #6effc4;
             font-style: italic;
             margin-bottom: 0.5rem;
             font-size: 1.1rem;
         }
-
         .interview-card .company {
             color: #a8e6cf;
             margin-bottom: 1rem;
         }
-
         .interview-card .date {
             color: #a8e6cf;
             margin-bottom: 1.5rem;
             font-size: 0.9rem;
         }
-
         .interview-card p {
             line-height: 1.8;
             margin-bottom: 1rem;
         }
-
         .highlight {
             background: rgba(78, 204, 163, 0.2);
             padding: 1rem;
             border-radius: 10px;
             margin: 1rem 0;
             border-left: 3px solid #4ecca3;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: rgba(78, 204, 163, 0.2);
+            color: #4ecca3;
+            text-decoration: none;
+            border-radius: 50px;
+            border: 2px solid #4ecca3;
+            font-weight: 600;
+            transition: all 0.3s;
+            margin-top: 0.5rem;
+        }
+        .btn:hover {
+            background: #4ecca3;
+            color: #0a4d3c;
         }
     </style>
 </head>
@@ -122,35 +117,38 @@
                 <p class="date">Interview Date: October 21, 2025 | 4:00 PM - 4:40 PM</p>
                 <p>Through my interview with Mr. Cuman, I gained powerful insights about green AI and its impact on the tech industry and environment. He explained how AI is currently using massive amounts of energy, which is a major issue for tech companies that must solve it themselves.</p>
                 <div class="highlight">
-                    <strong>Key Insight:</strong> A lot of energy is lost when transferred from power plants to data centers. Building energy stations closer to cities can provide less energy loss.
+                    <strong>Key Insight:</strong> A lot of energy is lost when transferred from power plants to data centers. Building energy stations closer to cities can provide less energy loss. This led me to think about other ways to reduce wasted energy in AI infrastructure.
                 </div>
                 <p>Mr. Cuman has been in technology business for almost 40 years and provided unique perspectives on combining various ideas to form better solutions. He also introduced me to the concept of Marketech - marketing with emphasis on technology.</p>
+                <a href="https://docs.google.com/document/d/15ZGGDTPh4Q4NVgnJdUbPRCF9qRYlLaIwykcDrUVWdQQ/edit?usp=sharing" class="btn" target="_blank">Read Full Interview</a>
             </div>
 
-            <!-- Interview 2: Mr. Goodfellow -->
+            <!-- Interview 2: Ian Goodfellow -->
             <div class="interview-card">
-                <h2>Mr. Goodfellow</h2>
+                <h2>Ian Goodfellow</h2>
                 <p class="title">AI Research Scientist</p>
                 <p class="company">Google DeepMind (Previously OpenAI, Apple)</p>
-                <p class="date">Interview Date: October-November 2025</p>
+                <p class="date">Interview Date: October 29, 2025 | 4:00 PM - 4:30 PM</p>
                 <p>In my interview with Mr. Goodfellow, I learned how he creates AI simulations of fusion reactors for Google DeepMind. These simulations allow technical parts of the fusion reactor to be tested, like temperature and structure, for clean, renewable energy creation.</p>
                 <div class="highlight">
                     <strong>Project Feedback:</strong> He believed my original work idea could definitely reduce energy, as the energy usage of prompts has been studied extensively recently. He identified that measuring energy reduction would be a key challenge to overcome.
                 </div>
-                <p>Mr. Goodfellow provided multiple research articles and courses to help me learn more about building AI models, along with additional contacts for future interviews.</p>
+                <p>Mr. Goodfellow emphasized that understanding algorithms is more important than just learning code. Python is great for AI, but the math and algorithms are what really matter. He provided multiple research articles and courses to help me learn more about building AI models.</p>
+                <a href="https://docs.google.com/document/d/1-2ohLz-YYnt_X6afF7_BCbMemtYL2r2dwnobN0RFDNs/edit?usp=sharing" class="btn" target="_blank">Read Full Interview</a>
             </div>
 
-            <!-- Interview 3: Mr. Vasireddy -->
+            <!-- Interview 3: Siva Vasireddy -->
             <div class="interview-card">
-                <h2>Mr. Vasireddy</h2>
+                <h2>Siva Vasireddy</h2>
                 <p class="title">PhD Student</p>
                 <p class="company">University of Texas at Dallas</p>
-                <p class="date">Interview Date: October-November 2025</p>
-                <p>Mr. Vasireddy proposed a different approach to reducing AI energy consumption. He explained that the amount of computations a model uses is the main energy consumer, so researchers are currently trying to solve this through new coding architecture.</p>
+                <p class="date">Interview Date: October 31, 2025 | 4:45 PM - 5:15 PM</p>
+                <p>Mr. Vasireddy proposed a different approach to reducing AI energy consumption. He explained that the amount of computations a model uses is the main energy consumer, so researchers are currently trying to solve this through new coding architecture like adaptive transformers.</p>
                 <div class="highlight">
-                    <strong>Technical Insight:</strong> My prompt reducer can reduce energy consumption by reducing the amount of computations the large model must undergo. This helped me understand how to expand my project to be more impactful.
+                    <strong>Technical Insight:</strong> My prompt reducer can reduce energy consumption by reducing the amount of computations the large model must undergo. This helped me understand how to expand my project—I could build a mini-assistant AI for simple prompts since smaller models use much less energy.
                 </div>
-                <p>He provided valuable resources and additional professional contacts to continue my research journey.</p>
+                <p>He sparked the idea that led to my current project design: having my prompt optimizer include a built-in mini AI assistant that can help with smaller tasks, saving energy by routing simple queries to efficient small models.</p>
+                <a href="https://docs.google.com/document/d/1CiTOcYyoq-8-ZGhc5mJuu0wTY2XfPUS9odDQ3Xy__XY/edit?usp=sharing" class="btn" target="_blank">Read Full Interview</a>
             </div>
 
             <!-- Interview 4: Mr. Huang -->
@@ -163,7 +161,7 @@
                 <div class="highlight">
                     <strong>Project Validation:</strong> My idea about token count in prompts affecting energy consumption is very accurate and represents the first layer of AI models. My original work could help people by reducing energy costs at the prompting stage and changing their lifestyles.
                 </div>
-                <p>He emphasized an important point: if we can change people's lifestyle and usage of AI, consumption can inherently be increased or reduced depending on the effects of the change.</p>
+                <p>He emphasized an important point: if we can change people's lifestyle and usage of AI, consumption can inherently be increased or reduced depending on the effects of the change. This inspired the user-facing aspects of my project.</p>
             </div>
         </div>
     </div>
