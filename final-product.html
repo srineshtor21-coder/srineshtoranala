@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Product - GreenInfer - Srinesh Toranala</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a4d3c 0%, #1a1a2e 50%, #16213e 100%);
+            color: #fff;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            background: linear-gradient(45deg, #4ecca3, #6effc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #6effc4;
+            margin-bottom: 3rem;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(45deg, #4ecca3, #45b393);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: all 0.3s;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(78, 204, 163, 0.4);
+        }
+
+        .coming-soon {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 4rem 3rem;
+            border-radius: 15px;
+            border: 1px solid rgba(78, 204, 163, 0.2);
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .coming-soon h2 {
+            color: #4ecca3;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .logo-placeholder {
+            width: 200px;
+            height: 200px;
+            margin: 2rem auto;
+            background: linear-gradient(135deg, rgba(78, 204, 163, 0.3), rgba(110, 255, 196, 0.2));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #4ecca3;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .content-section {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 3rem;
+            border-radius: 15px;
+            border: 1px solid rgba(78, 204, 163, 0.2);
+            margin-bottom: 3rem;
+        }
+
+        .content-section h3 {
+            color: #6effc4;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .content-section p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            background: rgba(78, 204, 163, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid rgba(78, 204, 163, 0.3);
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: #4ecca3;
+            box-shadow: 0 10px 30px rgba(78, 204, 163, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h4 {
+            color: #4ecca3;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+
+        .timeline-item {
+            background: rgba(78, 204, 163, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #4ecca3;
+            margin-bottom: 1.5rem;
+        }
+
+        .timeline-item h4 {
+            color: #6effc4;
+            margin-bottom: 0.5rem;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background: linear-gradient(45deg, #4ecca3, #45b393);
+            border-radius: 25px;
+            font-weight: 600;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html#projects" class="back-btn">← Back to Home</a>
+        
+        <h1>GreenInfer</h1>
+        <p class="subtitle">A Green Orchestration Framework for Sustainable AI</p>
+
+        <div class="coming-soon">
+            <div class="logo-placeholder">GI</div>
+            <h2>Coming Soon</h2>
+            <div class="status-badge">🚧 Currently In Development</div>
+            <p style="max-width: 700px; margin: 2rem auto; font-size: 1.2rem;">
+                GreenInfer is my ISM Final Product - an innovative green orchestration framework designed to make AI more accessible and sustainable.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h3>What is GreenInfer?</h3>
+            <p>GreenInfer is a green orchestration framework - essentially a sustainable alternative to platforms like ChatGPT, but with much broader capabilities. Unlike traditional AI platforms that are limited to single models or chatbots, GreenInfer is designed to work with multiple types of AI models and applications.</p>
+            
+            <p style="margin-top: 1rem;">The framework integrates my Original Work's prompt optimization technology to reduce energy consumption at every stage of AI interaction. By optimizing prompts before they reach large language models, GreenInfer can significantly decrease the computational resources and energy required for AI tasks.</p>
+            
+            <p style="margin-top: 1rem;">My primary goal through this project is to make a meaningful green impact on the world by creating a platform that not only makes AI more accessible but also drastically reduces its environmental footprint.</p>
+        </div>
+
+        <div class="content-section">
+            <h3>Planned Features</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌱</div>
+                    <h4>Energy Optimization</h4>
+                    <p>Integrated prompt optimization to reduce energy consumption across all AI models by up to 50%</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h4>Multi-Model Support</h4>
+                    <p>Access and orchestrate multiple AI models through a single, unified interface</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h4>Fast & Efficient</h4>
+                    <p>Optimized architecture for quick response times while maintaining sustainability</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h4>Energy Analytics</h4>
+                    <p>Real-time tracking and visualization of energy savings and environmental impact</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h4>Developer Friendly</h4>
+                    <p>Easy-to-use API for integrating green AI into any application</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h4>Open Source</h4>
+                    <p>Community-driven development to maximize impact and accessibility</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Why GreenInfer?</h3>
+            <p>AI models are consuming increasing amounts of energy as they grow in size and complexity. A single training run for large models can consume as much energy as 121 homes use in a year. As AI becomes more prevalent in our daily lives, addressing its environmental impact is crucial.</p>
+            
+            <p style="margin-top: 1rem;">GreenInfer addresses this challenge by:</p>
+            <ul style="list-style-position: inside; line-height: 2; margin-top: 1rem;">
+                <li>🎯 Optimizing prompts before processing to reduce computational load</li>
+                <li>🔄 Enabling efficient model orchestration to use the right model for each task</li>
+                <li>📉 Reducing redundant computations through intelligent caching</li>
+                <li>💡 Raising awareness about AI's environmental impact</li>
+                <li>🌟 Making sustainable AI accessible to everyone</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Development Timeline</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>Phase 1: Research & Planning ✅</h4>
+                    <p>Completed research on green AI, orchestration frameworks, and energy optimization techniques. Developed Original Work as proof of concept.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h4>Phase 2: Architecture Design 🔄</h4>
+                    <p>Currently designing the framework architecture, API structure, and integration points for multiple AI models.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h4>Phase 3: Core Development 📅</h4>
+                    <p>Planned: Building the core orchestration engine, integrating prompt optimization, and implementing energy tracking.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h4>Phase 4: Testing & Refinement 📅</h4>
+                    <p>Planned: Comprehensive testing, performance optimization, and validation of energy savings.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h4>Phase 5: Launch & Presentation 🎯</h4>
+                    <p>Target: May 2026 - Final ISM presentation and public release of GreenInfer.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Building on Original Work</h3>
+            <p>GreenInfer builds upon the foundation of my Original Work (Energy Saver AI - Prompt Optimizer) by taking the prompt optimization technology to the next level. While my Original Work focused on optimizing individual prompts, GreenInfer expands this to create a comprehensive framework that:</p>
+            
+            <ul style="list-style-position: inside; line-height: 2; margin-top: 1rem;">
+                <li>Integrates prompt optimization as a core feature</li>
+                <li>Extends beyond chatbots to support various AI applications</li>
+                <li>Provides a scalable platform for sustainable AI deployment</li>
+                <li>Enables developers to build green AI solutions</li>
+                <li>Creates a measurable impact on AI's environmental footprint</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Stay Updated</h3>
+            <p>GreenInfer is currently in active development. Follow my progress through my ISM blogs and reach out if you're interested in learning more about the project.</p>
+            
+            <p style="margin-top: 1rem;">Expected completion: <strong>May 2026</strong></p>
+            
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="blogs.html" class="back-btn">Read Development Blogs</a>
+                <a href="index.html#contact" class="back-btn">Get In Touch</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
