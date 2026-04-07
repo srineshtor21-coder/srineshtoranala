@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISM Documentation - Srinesh Toranala</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a4d3c 0%, #1a1a2e 50%, #16213e 100%);
+            color: #fff;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        h1 {
+            font-size: 3rem; margin-bottom: 3rem; text-align: center;
+            background: linear-gradient(45deg, #4ecca3, #6effc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .back-btn {
+            display: inline-block; padding: 0.8rem 1.5rem;
+            background: linear-gradient(45deg, #4ecca3, #45b393);
+            color: #fff; text-decoration: none;
+            border-radius: 50px; font-weight: 600;
+            margin-bottom: 2rem; transition: all 0.3s;
+        }
+        .back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(78, 204, 163, 0.4);
+        }
+        .doc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem; margin-bottom: 3rem;
+        }
+        .doc-card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 2rem; border-radius: 15px;
+            border: 1px solid rgba(78, 204, 163, 0.2);
+            transition: all 0.3s;
+        }
+        .doc-card:hover {
+            transform: translateY(-5px);
+            border-color: #4ecca3;
+            box-shadow: 0 10px 30px rgba(78, 204, 163, 0.2);
+        }
+        .doc-card h3 {
+            color: #4ecca3;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        .doc-card p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: rgba(78, 204, 163, 0.2);
+            color: #4ecca3;
+            text-decoration: none;
+            border-radius: 50px;
+            border: 2px solid #4ecca3;
+            font-weight: 600;
+            transition: all 0.3s;
+            margin-top: 0.5rem;
+        }
+        .btn:hover {
+            background: #4ecca3;
+            color: #0a4d3c;
+        }
+        .section-header {
+            color: #6effc4;
+            font-size: 2rem;
+            margin: 3rem 0 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid rgba(78, 204, 163, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">← Back to Home</a>
+        
+        <h1>ISM Documentation</h1>
+
+        <h2 class="section-header">Project Proposals</h2>
+        <div class="doc-grid">
+            <div class="doc-card">
+                <h3>Original Work Proposal</h3>
+                <p><strong>Energy Saver AI - Prompt Optimizer</strong></p>
+                <p>Proposed creating a website/app with Chrome extension capabilities to reduce AI energy consumption by optimizing prompts for models like GPT, reducing token count while maintaining meaning.</p>
+                <a href="https://docs.google.com/document/d/1LYy1rZIHg9XqZ2iIg-h_w8Exz_TdEm159qwmPFuQLCQ/edit?usp=sharing" class="btn" target="_blank">View Proposal</a>
+            </div>
+
+            <div class="doc-card">
+                <h3>Final Product Proposal</h3>
+                <p><strong>GreenInfer - Green AI Orchestration Framework</strong></p>
+                <p>Proposed building an energy-adaptive green orchestration framework with real-time energy tracking, carbon-aware routing, and multi-tier model selection to dramatically reduce AI's environmental footprint.</p>
+                <a href="https://docs.google.com/document/d/11A_j73OXo6Ryu9G3e4TaxmTu8T3Bt2LbQFodyhF-tVU/edit?usp=sharing" class="btn" target="_blank">View Proposal</a>
+            </div>
+
+            <div class="doc-card">
+                <h3>Final Product Outline</h3>
+                <p>Detailed architectural outline of the GreenInfer framework, including pipeline design, model tiers, complexity scoring, and carbon-aware features.</p>
+                <a href="https://docs.google.com/document/d/1gf3vio4bnZiMOhqGHSBm6kMOWcCnTwTNiOnWStH7jDs/edit?usp=sharing" class="btn" target="_blank">View Outline</a>
+            </div>
+        </div>
+
+        <h2 class="section-header">Work Logs</h2>
+        <div class="doc-grid">
+            <div class="doc-card">
+                <h3>Original Work Log</h3>
+                <p>Complete timeline of Original Work development from October 2025 through December 2025. Includes interviews, research, coding sessions, model training, and UI development.</p>
+                <p><strong>Total Hours:</strong> 35+ hours over 3 months</p>
+                <a href="https://docs.google.com/spreadsheets/d/1EjMRj6XmbDFRVxyxjxu8PELZBQFm1OwCSIiFVwU_02s/edit?usp=sharing" class="btn" target="_blank">View Log</a>
+            </div>
+
+            <div class="doc-card">
+                <h3>Final Product Work Log</h3>
+                <p>Development timeline for GreenInfer from January 2026 through April 2026. Documents architecture design, model training, framework implementation, and deployment.</p>
+                <p><strong>Total Hours:</strong> 45+ hours over 4 months</p>
+                <a href="https://docs.google.com/spreadsheets/d/18iyXA9839UEwj8QFriRB_EQSTnOiqPJA4bAK9X4B1sI/edit?usp=sharing" class="btn" target="_blank">View Log</a>
+            </div>
+
+            <div class="doc-card">
+                <h3>Mentor Visit Log</h3>
+                <p>Record of all mentor meetings with Ms. Marta Adamska throughout the ISM program, including discussion topics, guidance received, and project feedback.</p>
+                <a href="#" class="btn" target="_blank">View Log</a>
+            </div>
+        </div>
+
+        <h2 class="section-header">Project Documentation</h2>
+        <div class="doc-grid">
+            <div class="doc-card">
+                <h3>Original Work Explanation</h3>
+                <p>Comprehensive explanation of the Energy Saver AI project, including problem statement, methodology, dataset creation, model training, and expected outcomes.</p>
+                <a href="https://docs.google.com/document/d/1GU1vUIf9YByWMGxILjXvRgPH35dDqhW4mFDvw5d2Y-Y/edit?usp=sharing" class="btn" target="_blank">View Document</a>
+            </div>
+
+            <div class="doc-card">
+                <h3>Original Work Works Cited</h3>
+                <p>Complete bibliography of research papers, documentation, tutorials, and interview sources used in developing the Energy Saver AI prompt optimizer.</p>
+                <a href="https://docs.google.com/document/d/1XfGuHCgAHcuS6NGn_3FI6pLqzTCcSB3vnkJvUGOU41E/edit?usp=sharing" class="btn" target="_blank">View Citations</a>
+            </div>
+
+            <div class="doc-card">
+                <h3>Final Product Presentation</h3>
+                <p>Slideshow presentation for the GreenInfer final product, showcasing features, impact metrics, technical architecture, and demonstration.</p>
+                <a href="https://docs.google.com/presentation/d/1J55zrcEgeF5R--dYkCKzRBW9pOJw1PeLPnyGq5BHLGU/edit?usp=sharing" class="btn" target="_blank">View Slides</a>
+            </div>
+        </div>
+
+        <h2 class="section-header">Video Demonstrations</h2>
+        <div class="doc-grid">
+            <div class="doc-card">
+                <h3>Original Work Demo</h3>
+                <p>Screen recording demonstrating the Energy Saver AI prompt optimizer in action, showing token reduction and energy savings calculations.</p>
+                <a href="#" class="btn">Watch Video</a>
+            </div>
+
+            <div class="doc-card">
+                <h3>Original Work Elevator Pitch</h3>
+                <p>60-second overview of the Energy Saver AI project, highlighting the problem, solution, and impact.</p>
+                <a href="#" class="btn">Watch Pitch</a>
+            </div>
+
+            <div class="doc-card">
+                <h3>Final Product Presentation</h3>
+                <p>Complete ISM Final Presentation speech for GreenInfer, delivered May 2026.</p>
+                <a href="#" class="btn">Watch Presentation</a>
+            </div>
+        </div>
+
+        <h2 class="section-header">Conference Records</h2>
+        <div class="doc-grid">
+            <div class="doc-card">
+                <h3>Student/Teacher Conference Record</h3>
+                <p>Record of meetings and check-ins with ISM teacher Mrs. Naegle throughout the program year.</p>
+                <a href="#" class="btn">View Record</a>
+            </div>
+
+            <div class="doc-card">
+                <h3>Mentor Page</h3>
+                <p>Dedicated page with mentor information, meeting logs, and collaboration details with Ms. Marta Adamska.</p>
+                <a href="#mentor" class="btn">View Mentor Page</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
